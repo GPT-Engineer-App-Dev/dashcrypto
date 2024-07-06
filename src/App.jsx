@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { LayoutDashboard, Wallet, History, Settings } from "lucide-react";
+import { LayoutDashboard, Wallet, History, Settings, TrendingUp } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar";
 import Dashboard from "./pages/Dashboard";
@@ -13,9 +13,9 @@ const queryClient = new QueryClient();
 
 export const navItems = [
   {
-    title: "Dashboard",
+    title: "Market",
     to: "/",
-    icon: <LayoutDashboard className="h-4 w-4" />,
+    icon: <TrendingUp className="h-4 w-4" />,
   },
   {
     title: "Portfolio",
